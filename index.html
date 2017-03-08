@@ -9,9 +9,8 @@
 </body>
 <script>
 var MyFunction = (function myFunction(){
-	for (var i = 0; i < 1; i++) {
-		Date.now();
-	}
+	var time; Date.now();
+	document.querySelectorAll('h1').innerHTML = time;
 }());
 </script>
 </html>
