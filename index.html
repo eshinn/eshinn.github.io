@@ -3,14 +3,18 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Test</title>
+<script>
+var MyFunction = function myFunction(){
+	var time = Date.now();
+	document.querySelector('h1').innerHTML = time;
+};
+MyFunction();
+</script>
 </head>
 <body>
 <h1>Oh hai!</h1>
 </body>
 <script>
-var MyFunction = (function myFunction(){
-	var time = Date.now();
-	document.querySelector('h1').innerHTML = time;
-}());
+MyFunction();
 </script>
 </html>
